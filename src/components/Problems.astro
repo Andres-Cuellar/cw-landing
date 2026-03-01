@@ -213,6 +213,7 @@ const waveHeights = [
 <style>
   .problems-section {
     width: 100%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     padding: 100px 24px 80px;
@@ -578,14 +579,21 @@ const waveHeights = [
     }
   }
   @media (max-width: 768px) {
+    .problems-section {
+      padding: 60px 16px 60px;
+      overflow: hidden;
+    }
     .title {
-      font-size: 40px;
+      font-size: 36px;
     }
     .card-title {
-      font-size: 24px;
+      font-size: 22px;
     }
     .large-title {
-      font-size: 30px;
+      font-size: 26px;
+    }
+    .problem-card {
+      padding: 28px 20px;
     }
     .comm-visual {
       flex-direction: column;
@@ -593,9 +601,55 @@ const waveHeights = [
       gap: 16px;
       padding: 0;
     }
+    .comm-box {
+      width: 100%;
+      box-sizing: border-box;
+    }
     .connection {
       transform: rotate(90deg);
       margin: 16px 0;
+    }
+    /* Phones: remove negative margins to prevent overflow */
+    .phones-visual {
+      height: 220px;
+      gap: 8px;
+    }
+    .phone-left {
+      margin-left: 0;
+      width: 120px;
+    }
+    .phone-center {
+      width: 110px;
+    }
+    .phone-right {
+      margin-right: 0;
+      width: 100px;
+    }
+    /* Chaos stickies: contain within card */
+    .chaos-visual {
+      height: 200px;
+    }
+    .sticky {
+      font-size: 11px;
+      padding: 6px 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 30px;
+    }
+    .phones-visual {
+      height: 180px;
+    }
+    .phone-left {
+      width: 100px;
+    }
+    .phone-center {
+      width: 90px;
+    }
+    .phone-right {
+      display: none;
     }
   }
 </style>
