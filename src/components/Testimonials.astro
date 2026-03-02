@@ -89,7 +89,7 @@ const testimonials = [
                 <div class="visual-side">
                   <div class="laptop-mockup">
                     <div class="laptop-screen">
-                      <img src={t.image} alt="Project Mockup" />
+                      <img src={t.image} alt="Project Mockup" loading="lazy" decoding="async" />
                     </div>
                     <div class="laptop-base">
                       <div class="laptop-keyboard" />
@@ -113,7 +113,7 @@ const testimonials = [
                   </div>
                   <p class="client-quote">{t.text}</p>
                   <div class="client-info">
-                    <img class="client-avatar" src={t.avatar} alt={t.name} />
+                    <img class="client-avatar" src={t.avatar} alt={t.name} loading="lazy" decoding="async" />
                     <div>
                       <h4 class="client-name">{t.name}</h4>
                       <p class="client-company">{t.company}</p>
