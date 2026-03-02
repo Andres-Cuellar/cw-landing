@@ -4,129 +4,204 @@ import "../styles/global.css";
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/webp" href="/icono.webp" />
-		<link rel="icon" href="/icono.webp" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Creamos tu Web — Ecosistema de Ventas Todo en Uno</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/webp" href="/icono.webp" />
+    <link rel="icon" href="/icono.webp" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Creamos tu Web — Ecosistema de Ventas Todo en Uno</title>
 
-		<!-- SEO -->
-		<meta name="description" content="Construimos tu Ecosistema de Ventas Todo en Uno. Embudos, CRM y automatizaciones de WhatsApp listas para operar, sin que toques una sola línea de código." />
-		<link rel="canonical" href="https://landing.creamostuweb.co/" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Construimos tu Ecosistema de Ventas Todo en Uno. Embudos, CRM y automatizaciones de WhatsApp listas para operar, sin que toques una sola línea de código."
+    />
+    <link rel="canonical" href="https://landing.creamostuweb.co/" />
 
-		<!-- Open Graph -->
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://landing.creamostuweb.co/" />
-		<meta property="og:title" content="Creamos tu Web — Ecosistema de Ventas Todo en Uno" />
-		<meta property="og:description" content="Construimos tu Ecosistema de Ventas Todo en Uno. Embudos, CRM y automatizaciones de WhatsApp listas para operar, sin que toques una sola línea de código." />
-		<meta property="og:image" content="https://landing.creamostuweb.co/icono.webp" />
-		<meta property="og:locale" content="es_ES" />
-		<meta property="og:site_name" content="Creamos tu Web" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://landing.creamostuweb.co/" />
+    <meta
+      property="og:title"
+      content="Creamos tu Web — Ecosistema de Ventas Todo en Uno"
+    />
+    <meta
+      property="og:description"
+      content="Construimos tu Ecosistema de Ventas Todo en Uno. Embudos, CRM y automatizaciones de WhatsApp listas para operar, sin que toques una sola línea de código."
+    />
+    <meta
+      property="og:image"
+      content="https://landing.creamostuweb.co/icono.webp"
+    />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Creamos tu Web" />
 
-		<!-- Twitter Card -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Creamos tu Web — Ecosistema de Ventas Todo en Uno" />
-		<meta name="twitter:description" content="Construimos tu Ecosistema de Ventas Todo en Uno. Embudos, CRM y automatizaciones de WhatsApp listas para operar, sin que toques una sola línea de código." />
-		<meta name="twitter:image" content="https://landing.creamostuweb.co/icono.webp" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Creamos tu Web — Ecosistema de Ventas Todo en Uno"
+    />
+    <meta
+      name="twitter:description"
+      content="Construimos tu Ecosistema de Ventas Todo en Uno. Embudos, CRM y automatizaciones de WhatsApp listas para operar, sin que toques una sola línea de código."
+    />
+    <meta
+      name="twitter:image"
+      content="https://landing.creamostuweb.co/icono.webp"
+    />
 
-		<!-- Meta Pixel Code -->
-		<script>
-			!function(f,b,e,v,n,t,s)
-			{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-			n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-			if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-			n.queue=[];t=b.createElement(e);t.async=!0;
-			t.src=v;s=b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t,s)}(window, document,'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
-			fbq('init', '1825814668078338');
-			fbq('track', 'PageView');
-		</script>
-		<noscript><img height="1" width="1" style="display:none"
-			src="https://www.facebook.com/tr?id=1825814668078338&ev=PageView&noscript=1"
-		/></noscript>
-		<!-- End Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1825814668078338");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=1825814668078338&ev=PageView&noscript=1"
+      /></noscript
+    >
+    <!-- End Meta Pixel Code -->
 
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-KX9884R2');</script>
-		<!-- End Google Tag Manager -->
-	</head>
-	<body>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX9884R2"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KX9884R2");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KX9884R2"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
 
-		<slot />
+    <slot />
 
-		<!-- Floating WhatsApp button -->
-		<a
-			href="https://wa.me/18885453113?text=Quiero%20hablar%20con%20un%20asesor"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="wa-float"
-			aria-label="Hablar por WhatsApp"
-		>
-			<span class="wa-pulse"></span>
-			<svg class="wa-icon" width="28" height="28" viewBox="0 0 32 32" fill="currentColor">
-				<path d="M16 2a14 14 0 0 0-12.19 20.89L2 30l7.3-1.78A14 14 0 1 0 16 2zm0 25.5a11.44 11.44 0 0 1-5.84-1.6l-.42-.25-4.33 1.05 1.08-4.22-.28-.44A11.5 11.5 0 1 1 16 27.5zm6.29-8.56c-.34-.17-2.03-1-2.34-1.11s-.54-.17-.77.17-.88 1.11-1.08 1.34-.4.26-.74.09a9.32 9.32 0 0 1-2.74-1.69 10.3 10.3 0 0 1-1.9-2.36c-.2-.34 0-.52.15-.69s.34-.4.51-.6a2.27 2.27 0 0 0 .34-.57.63.63 0 0 0 0-.6c-.09-.17-.77-1.85-1.05-2.53s-.56-.57-.77-.58h-.65a1.26 1.26 0 0 0-.91.43 3.84 3.84 0 0 0-1.2 2.85 6.67 6.67 0 0 0 1.4 3.54c.17.23 2.4 3.66 5.82 5.13a19.6 19.6 0 0 0 1.94.72 4.67 4.67 0 0 0 2.14.13c.65-.1 2.03-.83 2.32-1.63a2.87 2.87 0 0 0 .2-1.63c-.08-.14-.31-.23-.65-.4z"/>
-			</svg>
-		</a>
+    <!-- Floating WhatsApp button -->
+    <a
+      href="https://wa.me/18885453113?text=Quiero%20hablar%20con%20un%20asesor"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="wa-float"
+      aria-label="Hablar por WhatsApp"
+    >
+      <span class="wa-pulse"></span>
+      <svg
+        class="wa-icon"
+        width="28"
+        height="28"
+        viewBox="0 0 32 32"
+        fill="currentColor"
+      >
+        <path
+          d="M16 2a14 14 0 0 0-12.19 20.89L2 30l7.3-1.78A14 14 0 1 0 16 2zm0 25.5a11.44 11.44 0 0 1-5.84-1.6l-.42-.25-4.33 1.05 1.08-4.22-.28-.44A11.5 11.5 0 1 1 16 27.5zm6.29-8.56c-.34-.17-2.03-1-2.34-1.11s-.54-.17-.77.17-.88 1.11-1.08 1.34-.4.26-.74.09a9.32 9.32 0 0 1-2.74-1.69 10.3 10.3 0 0 1-1.9-2.36c-.2-.34 0-.52.15-.69s.34-.4.51-.6a2.27 2.27 0 0 0 .34-.57.63.63 0 0 0 0-.6c-.09-.17-.77-1.85-1.05-2.53s-.56-.57-.77-.58h-.65a1.26 1.26 0 0 0-.91.43 3.84 3.84 0 0 0-1.2 2.85 6.67 6.67 0 0 0 1.4 3.54c.17.23 2.4 3.66 5.82 5.13a19.6 19.6 0 0 0 1.94.72 4.67 4.67 0 0 0 2.14.13c.65-.1 2.03-.83 2.32-1.63a2.87 2.87 0 0 0 .2-1.63c-.08-.14-.31-.23-.65-.4z"
+        ></path>
+      </svg>
+    </a>
 
-		<style is:global>
-			.wa-float {
-				position: fixed;
-				bottom: 28px;
-				right: 28px;
-				z-index: 9999;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				background: #25d366;
-				color: #fff;
-				text-decoration: none;
-				border-radius: 50%;
-				width: 56px;
-				height: 56px;
-				box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
-				transition: box-shadow 0.2s, transform 0.2s;
-			}
-			.wa-float:hover {
-				box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
-				transform: translateY(-2px);
-			}
-			.wa-pulse {
-				position: absolute;
-				inset: 0;
-				border-radius: 50px;
-				background: #25d366;
-				animation: wa-pulse 2.5s ease-out infinite;
-				z-index: -1;
-			}
-			@keyframes wa-pulse {
-				0%   { transform: scale(1); opacity: 0.6; }
-				70%  { transform: scale(1.18); opacity: 0; }
-				100% { transform: scale(1.18); opacity: 0; }
-			}
-			.wa-icon {
-				flex-shrink: 0;
-				width: 28px;
-				height: 28px;
-			}
-			@media (max-width: 480px) {
-				.wa-float {
-					bottom: 20px;
-					right: 16px;
-					width: 50px;
-					height: 50px;
-				}
-			}
-		</style>
-	</body>
+    <style is:global>
+      .wa-float {
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #25d366;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+        transition:
+          box-shadow 0.2s,
+          transform 0.2s;
+      }
+      .wa-float:hover {
+        box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
+        transform: translateY(-2px);
+      }
+      .wa-pulse {
+        position: absolute;
+        inset: 0;
+        border-radius: 50px;
+        background: #25d366;
+        animation: wa-pulse 2.5s ease-out infinite;
+        z-index: -1;
+      }
+      @keyframes wa-pulse {
+        0% {
+          transform: scale(1);
+          opacity: 0.6;
+        }
+        70% {
+          transform: scale(1.18);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1.18);
+          opacity: 0;
+        }
+      }
+      .wa-icon {
+        flex-shrink: 0;
+        width: 28px;
+        height: 28px;
+      }
+      @media (max-width: 480px) {
+        .wa-float {
+          bottom: 20px;
+          right: 16px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    </style>
+  </body>
 </html>
